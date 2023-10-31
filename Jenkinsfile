@@ -23,5 +23,10 @@ pipeline {
                 sh './jenkins/scripts/kill.sh'
             }
         }
+        stage('Delay') {
+    steps {
+        sleep(60)
+    }
+}
     }
 }
